@@ -1,0 +1,16 @@
+---
+import Social from './Social.astro';
+---
+<style>
+/* ik styling within an html (or in this case astro) file isn't efficient but this is a tutorial...)*/
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
+<footer>
+    <Social platform="twitter" username="astrodotbuild" />
+    <Social platform="github" username="The-True-Stickle" />
+    <Social platform="youtube" username="astrodotbuild" />
+</footer>

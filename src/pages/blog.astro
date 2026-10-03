@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+
 ---
 <html lang="en">
 
@@ -13,11 +16,7 @@ import '../styles/global.css';
 </head>
 
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
-    </nav>
+    <Header />
 
     <h1>My cool blog page</h1>
     <p>When I am not following a tutorial I will write more here...</p>
@@ -26,6 +25,10 @@ import '../styles/global.css';
         <li><a href="/posts/post-2/">Post 2</a></li>
         <li><a href="/posts/post-3/">Post 3</a></li>
     </ul>
+    <Footer />
+    <script>
+		import "../scripts/menu.js";
+	</script>
 </body>
 
 
